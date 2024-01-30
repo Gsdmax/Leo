@@ -1,0 +1,36 @@
+{
+  "outbounds": 
+  [
+    {
+      "type": "wireguard",
+      "tag": "iran",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8493:ff66:104:d375:c41c/128"
+      ],
+      "private_key": "KMDriWZZnsZvEC2cY3rndrms2rxoWpvH4GdEerG9amM=",
+      "server": "162.159.195.93",
+      "server_port": 2506,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "o1XZ",
+      "mtu": 1280,
+      "fake_packets": "5-10"
+    },
+    {
+      "type": "wireguard",
+      "tag": "germany",
+      "detour": "iran",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:80be:9c4d:2140:ae26:5426/128"
+      ],
+      "private_key": "ULg7AvmT16JbkXOcdy+9soa3NVSLgg9hj221lnFOi18=",
+      "server": "162.159.195.93",
+      "server_port": 2506,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "ALGT",
+      "mtu": 1280,
+      "fake_packets": "5-10"
+    }
+  ]
+}
